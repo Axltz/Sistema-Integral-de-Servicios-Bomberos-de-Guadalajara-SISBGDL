@@ -1,0 +1,14 @@
+# Dependencias descargadas por Node
+node_modules/
+
+# Código compilado de TypeScript
+dist/
+
+# Variables de entorno con claves secretas
+.env
+.env.local
+
+# Archivos temporales y de logs
+npm-debug.log*
+yarn-debug.log*
+.DS_Store

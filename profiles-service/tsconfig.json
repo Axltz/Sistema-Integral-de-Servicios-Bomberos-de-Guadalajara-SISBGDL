@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                /* Versión de JavaScript a la que traducirá */
+    "module": "commonjs",              /* Sistema de módulos que usará Node.js */
+    "moduleResolution": "node",       /* Cómo buscará las librerías importadas */
+    "outDir": "./dist",                /* Carpeta donde guardará el JavaScript compilado */
+    "rootDir": "./src",                /* Dónde vive nuestro código fuente en TypeScript */
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"]
+}

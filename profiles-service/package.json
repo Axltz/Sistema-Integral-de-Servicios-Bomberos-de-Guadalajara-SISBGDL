@@ -4,7 +4,7 @@
   "description": "Microservicio de Perfiles y Expedientes para Bomberos Guadalajara",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "nodemon --watch src --exec ts-node src/server.ts",
+    "dev": "nodemon --watch src --exec tsx src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
   },
@@ -19,6 +19,7 @@
     "@types/node": "^20.11.0",
     "nodemon": "^3.0.2",
     "ts-node": "^10.9.2",
+    "tsx": "^4.23.1",
     "typescript": "^5.3.3"
   }
 }

@@ -7,4 +7,5 @@ app.listen(PORT, () => {
   console.log(`📋 Pruebas disponibles:`);
   console.log(`   - Ver todos: http://localhost:${PORT}/api/v1/bomberos`);
   console.log(`   - Ver por ID: http://localhost:${PORT}/api/v1/bomberos/bmb-001`);
+  console.log(`   - Ver por prioridad: http://localhost:${PORT}/api/v1/bomberos/prioridad/asignacion`);
 });

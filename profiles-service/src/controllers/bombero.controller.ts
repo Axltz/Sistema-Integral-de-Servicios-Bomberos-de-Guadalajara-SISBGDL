@@ -45,4 +45,21 @@ export class BomberoController {
       });
     }
   }
+  public async obtenerPrioridadAsignacion(req: Request, res: Response): Promise<void> {
+    try {
+      const listaPrioridad = await bomberoService.obtenerPrioridadAsignacion();
+
+      res.status(200).json({
+        status: 'success',
+        total: listaPrioridad.length,
+        descripcion: 'Cola de asignación ordenada por Score de Equidad',
+        data: listaPrioridad
+      });
+    } catch (error) {
+      res.status(500).json({
+        status: 'error',
+        message: 'Error interno al obtener la lista de prioridades'
+      });
+    }
+  }
 }

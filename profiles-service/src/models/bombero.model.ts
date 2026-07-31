@@ -11,6 +11,8 @@ export interface IBombero {
     funcionPrincipal: FuncionOperativa;
     tipoLicencia: string;
     estatus: EstatusLaboral;
+    fechaUltimoOperativo: Date;
+    horasAcumuladasMes: number;
 
 
 }

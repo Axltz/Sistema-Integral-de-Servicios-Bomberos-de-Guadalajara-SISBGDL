@@ -1,6 +1,6 @@
 import { IBombero } from '../models/bombero.model';
 import { IBomberoRepository } from '../repositories/bombero.repository.interface';
-import { BomberoRepositoryMock } from '../repositories/bombero.repository.mock';
+import { BomberoPrismaRepository } from '../repositories/bombero.repository.prisma';
 
 export interface IBomberoPrioridad {
   bombero: IBombero;
@@ -11,8 +11,7 @@ export interface IBomberoPrioridad {
 export class BomberoService {
   private repository: IBomberoRepository;
 
-  // Inyección de dependencias a través del constructor
-  constructor(repository: IBomberoRepository = new BomberoRepositoryMock()) {
+  constructor(repository: IBomberoRepository = new BomberoPrismaRepository()) {
     this.repository = repository;
   }
 

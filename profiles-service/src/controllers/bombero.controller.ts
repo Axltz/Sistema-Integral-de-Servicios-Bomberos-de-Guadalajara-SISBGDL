@@ -45,9 +45,9 @@ export class BomberoController {
       });
     }
   }
-  public async obtenerPrioridadAsignacion(req: Request, res: Response): Promise<void> {
+  public async obtenerColaPrioridad(req: Request, res: Response): Promise<void> {
     try {
-      const listaPrioridad = await bomberoService.obtenerPrioridadAsignacion();
+      const listaPrioridad = await bomberoService.obtenerColaPrioridad();
 
       res.status(200).json({
         status: 'success',
